@@ -1,4 +1,4 @@
-<section id="home-content">
+<section id="main-content" class="fluid block">
     <h1>Hello and welcome to <span class="purple">Scriptasaurus!</span></h1>
     <p>Home to the often misunderstood, and frequently feared scripting giant - <strong>JavaScript</strong>.</p>
     <p>Through a series of fun, friendly and simple steps we will guide you through the wonderful world of JavaScript. And the end goal? Become a JavaScript master: a true Scriptasaurus.</p>

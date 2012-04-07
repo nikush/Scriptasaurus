@@ -11,10 +11,10 @@
                 <h1>Scriptasaurus</h1>
             </div>
             <nav>
-                <a href="#">Home</a>
+                <a href="index.php">Home</a>
                 <ul>
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Your Account</a></li>
+                    <li><a href="login">Log In</a></li>
+                    <li><a href="account">Your Account</a></li>
                 </ul>
             </nav>
         </header>

@@ -97,11 +97,6 @@ strong
     font-weight: bold;
 }
 
-section
-{
-    padding: 10px;
-}
-
 nav
 {
     background-color: #F2ECF9;
@@ -193,18 +188,32 @@ span.purple
     clear: both;
 }
 
-#live-feed
+.right-bar
 {
     float: right;
-    width: 300px;
-    background-color: #F2ECF9;
-    border: 1px solid #CCB8E0;
-    border-radius: 3px;
+    width: 320px;
 }
 
-#home-content
+.fluid
 {
     margin-right: 340px;
-    border: 1px solid #ddd;
+}
+
+.block
+{
     border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+}
+
+#live-feed
+{
+    background-color: #F2ECF9;
+    border-color: #CCB8E0;
+}
+
+#main-content
+{
+    border-color: #ccc;
 }
