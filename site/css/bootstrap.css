@@ -99,11 +99,8 @@ strong
 
 nav
 {
-    background-color: #F2ECF9;
-    border: 1px solid #CCB8E0;
     padding: 10px 15px;
     margin: 20px 10px 10px;
-    border-radius: 3px;
 }
 
 ul, ol
@@ -208,6 +205,7 @@ span.purple
     border-color: #ccc;
 }
 
+nav,
 .right-bar .block
 {
     background-color: #F2ECF9;
