@@ -7,6 +7,15 @@
     </head>
     <body>
         <header>
-            <h1>Header</h1>
+            <div class="container">
+                <h1>Scriptasaurus</h1>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Your Account</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="content-container">
