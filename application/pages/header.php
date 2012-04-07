@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Scriptasaurus</title>
+        <link rel="stylesheet" href="site/css/bootstrap.css" />
         <link rel="stylesheet" href="site/css/style.css" />
     </head>
     <body>
@@ -10,7 +11,7 @@
             <div class="container">
                 <h1>Scriptasaurus</h1>
             </div>
-            <nav>
+            <nav class="block">
                 <a href="index.php">Home</a>
                 <ul>
                     <li><a href="login">Log In</a></li>
