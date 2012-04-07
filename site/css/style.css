@@ -48,41 +48,54 @@ body
 {
     font-family: Helvetica, Ariel, sans-serif;
     font-size: 16px;
-    padding: 10px;
+    line-height: 1.2em;
+    background-color: #eee;
 }
 
 header
 {
-    margin-bottom: 10px;
+    background-color: white;
+    padding-bottom: 10px;
 }
 
 footer
 {
-    padding: 10px;
+    padding: 20px;
 }
 
 h1
 {
     font-size: 2em;
+    line-height: 1.3em;
+    margin-bottom: 10px;
 }
 
 p
 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 section
 {
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 nav
 {
-    background-color: #CCB8E0;
-    padding: 10px;
+    background-color: #F2ECF9;
+    border: 1px solid #CCB8E0;
+    padding: 10px 15px;
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
 }
 
+header:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
 header h1
 {
     text-align: center;
@@ -91,8 +104,7 @@ header h1
 header .container
 {
     background-color: #9970C2;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 20px;
 }
 
 nav ul
@@ -118,10 +130,15 @@ nav li
 
 .content-container
 {
-    margin-bottom: 10px;
+    background-color: white;
+    padding: 0 10px;
 }
 
-.row:after
+.main
+{
+    background-color: white;
+}
+.main:after
 {
     content: '';
     display: block;
@@ -132,11 +149,12 @@ nav li
 {
     float: right;
     width: 300px;
-    background-color: #ccc;
+    background-color: #F2ECF9;
+    border: 1px solid #CCB8E0;
+    border-radius: 3px;
 }
 
 #home-content
 {
-    background-color: #ccc;
-    margin-right: 330px;
+    margin-right: 340px;
 }

@@ -1,5 +1,5 @@
 <?php getHeader(); ?>
-<div class="row">
+<div class="main">
 <?php include PAGES . 'live-feed.php'; ?>
 <?php include PAGES . 'home/index.php'; ?>
 </div>
