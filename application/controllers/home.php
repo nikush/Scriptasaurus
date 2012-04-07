@@ -1,3 +1,3 @@
-<?php include PAGES . 'header.php'; ?>
+<?php getHeader(); ?>
         <h1>Home page</h1>
-<?php include PAGES . 'footer.php'; ?>
+<?php getFooter(); ?>
