@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Scriptasaurus</title>
+        <link rel="stylesheet" href="site/css/bootstrap.css" />
         <link rel="stylesheet" href="site/css/style.css" />
     </head>
     <body>
