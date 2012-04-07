@@ -1,3 +1,6 @@
 <?php getHeader(); ?>
-            <h1>Home page</h1>
+<div class="row">
+<?php include PAGES . 'live-feed.php'; ?>
+<?php include PAGES . 'home/index.php'; ?>
+</div>
 <?php getFooter(); ?>
