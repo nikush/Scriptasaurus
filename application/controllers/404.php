@@ -1,4 +1,7 @@
 <?php header('HTTP/1.0 404 Not Found'); ?>
 <?php getHeader(); ?>
-                <h1>404</h1>
+                <div class="block">
+                    <h1>404 - Page not found.</h1>
+                    <h2>Has that page gone extinct?</h2>
+                </div>
 <?php getFooter(); ?>
