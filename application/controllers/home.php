@@ -1,3 +1,3 @@
-<?php include 'application/pages/header.php'; ?>
-<h1>Home page</h1>
-<?php include 'application/pages/footer.php'; ?>
+<?php include PAGES . 'header.php'; ?>
+        <h1>Home page</h1>
+<?php include PAGES . 'footer.php'; ?>
