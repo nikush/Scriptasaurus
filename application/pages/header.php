@@ -11,8 +11,8 @@
             <div class="container">
                 <h1>Scriptasaurus</h1>
             </div>
-            <nav class="block">
-                <a href="index.php">Home</a>
+            <nav class="block clearfix">
+                <a class="pull-left" href="index.php">Home</a>
                 <ul>
                     <li><a href="login">Log In</a></li>
                     <li><a href="account">Your Account</a></li>
