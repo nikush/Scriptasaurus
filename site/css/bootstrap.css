@@ -144,6 +144,11 @@ nav li
     margin-left: 10px;
 }
 
+nav.block
+{
+    margin-bottom: 10px;
+}
+
 footer a
 {
     color: #666;
@@ -210,6 +215,7 @@ span.purple
     border-style: solid;
     padding: 10px;
     border-color: #ccc;
+    margin-bottom: 20px;
 }
 
 .clearfix:after
