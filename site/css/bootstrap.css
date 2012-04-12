@@ -225,3 +225,8 @@ nav,
     background-color: #F2ECF9;
     border-color: #CCB8E0;
 }
+
+nav ul
+{
+    margin-bottom: 0;
+}
