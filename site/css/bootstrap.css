@@ -212,6 +212,13 @@ span.purple
     border-color: #ccc;
 }
 
+.clearfix:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 nav,
 .right-bar .block
 {
