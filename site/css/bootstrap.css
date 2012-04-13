@@ -80,6 +80,14 @@ h2
     margin-bottom: 10px;
 }
 
+h3
+{
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
 a
 {
     color: #7F40BF;

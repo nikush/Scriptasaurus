@@ -1,3 +1,3 @@
 <div id="live-feed" class="block">
-    <p>Live feed</p>
+    <h3>Live feed</h3>
 </div>
