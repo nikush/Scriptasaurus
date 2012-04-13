@@ -190,6 +190,22 @@ footer ul li:last-child
     border: none;
 }
 
+form
+{
+    margin-bottom: 10px;
+}
+form label
+{
+    display: block;
+}
+form input[type='text'],
+form input[type='password'],
+form select
+{
+    display: block;
+    margin: 0 0 20px 0;
+}
+
 span.purple
 {
     color: #7F40BF;
