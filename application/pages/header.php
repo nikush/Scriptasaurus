@@ -1,3 +1,9 @@
+<?php
+if (!isset($breadcrumbs))
+{
+    $breadcrumbs = array('Home' => '');
+}
+?>
 <!DOCTYPE html>
 <html lang="en_GB">
     <head>
@@ -13,8 +19,13 @@
             </div>
             <nav class="block clearfix">
                 <ul class="pull-left breadcrumbs">
-                    <li><a href="index.php">Home</a></li>
-                    <li>Course</li>
+<?php foreach ($breadcrumbs as $k => $v) : ?>
+<?php   if ($v != '') : ?>
+                    <li><a href="<?php echo $v; ?>"><?php echo $k; ?></a></li>
+<?php   else : ?>
+                    <li><?php echo $k; ?></li>
+<?php   endif; ?>
+<?php endforeach; ?>
                 </ul>
                 <ul>
                     <li><a href="login">Log In</a></li>
