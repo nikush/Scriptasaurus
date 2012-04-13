@@ -1,3 +1,3 @@
 <div class="block">
-    <h3>Enrollment</h3>
+    <h3>Enrolment</h3>
 </div>
