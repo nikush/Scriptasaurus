@@ -7,4 +7,7 @@ implement this powerful scripting language in any web environment.</p>
 
     <p>To enrol, just click the link below, and fill in our enrolment form, or, 
 if you are already a Scriptasaurus user, you can login to access your account below.</p>
+
+    <p><a href="enrol">Enrol</a></p>
+    <p><a href="login">Login</a></p>
 </div>
