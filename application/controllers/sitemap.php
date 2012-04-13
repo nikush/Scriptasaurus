@@ -1,3 +1,9 @@
+<?php
+$breadcrumbs = array(
+    'Home' => 'index.php',
+    'Sitemap' => ''
+);
+?>
 <?php getHeader(); ?>
 <section class="right-bar">
     <?php include PAGES . 'enrolment-block.php'; ?>

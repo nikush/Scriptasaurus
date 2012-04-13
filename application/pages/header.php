@@ -1,4 +1,7 @@
 <?php
+// header is retrieved by a function, so the scope of breadcrumbs 
+// changes
+global $breadcrumbs;
 if (!isset($breadcrumbs))
 {
     $breadcrumbs = array('Home' => '');

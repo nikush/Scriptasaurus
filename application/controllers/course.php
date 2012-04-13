@@ -1,3 +1,9 @@
+<?php
+$breadcrumbs = array(
+    'Home' => 'index.php',
+    'Course' => ''
+);
+?>
 <?php getHeader(); ?>
 <section class="right-bar">
     <?php include PAGES . 'live-feed.php'; ?>
