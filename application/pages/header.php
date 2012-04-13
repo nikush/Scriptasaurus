@@ -12,7 +12,10 @@
                 <h1>Scriptasaurus</h1>
             </div>
             <nav class="block clearfix">
-                <a class="pull-left" href="index.php">Home</a>
+                <ul class="pull-left breadcrumbs">
+                    <li><a href="index.php">Home</a></li>
+                    <li>Course</li>
+                </ul>
                 <ul>
                     <li><a href="login">Log In</a></li>
                     <li><a href="account">Your Account</a></li>
