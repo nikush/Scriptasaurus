@@ -11,8 +11,8 @@ if (!empty($_POST))
 }
 
 $breadcrumbs = array(
-    'Home' => 'index.php',
-    'Login' => ''
+    'Home' => '',
+    'Login' => null
 );
 ?>
 <?php getHeader(); ?>

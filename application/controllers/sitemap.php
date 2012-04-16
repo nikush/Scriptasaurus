@@ -1,7 +1,7 @@
 <?php
 $breadcrumbs = array(
-    'Home' => 'index.php',
-    'Sitemap' => ''
+    'Home' => '',
+    'Sitemap' => null
 );
 ?>
 <?php getHeader(); ?>

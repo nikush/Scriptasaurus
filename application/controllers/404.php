@@ -1,8 +1,8 @@
 <?php header('HTTP/1.0 404 Not Found'); ?>
 <?php
 $breadcrumbs = array(
-    'Home' => 'index.php',
-    '404' => ''
+    'Home' => '',
+    '404' => null
 );
 ?>
 <?php getHeader(); ?>
