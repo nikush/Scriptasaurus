@@ -1,6 +1,5 @@
 <?php
-// header is retrieved by a function, so the scope of breadcrumbs 
-// changes
+// header is retrieved by a function, so the scope of breadcrumbs changes
 global $breadcrumbs;
 if (!isset($breadcrumbs))
 {
@@ -31,8 +30,12 @@ if (!isset($breadcrumbs))
 <?php endforeach; ?>
                 </ul>
                 <ul>
+<?php if (isLoggedIn()) : ?>
+                    <li><a href="account"><?php echo getUser(); ?></a></li>
+                    <li><a href="login/logout">Log Out</a></li>
+<?php else : ?>
                     <li><a href="login">Log In</a></li>
-                    <li><a href="account">Your Account</a></li>
+<?php endif; ?>
                 </ul>
             </nav>
         </header>
