@@ -16,11 +16,7 @@ if (isset($urlChunks[1]))
     $url['action'] = $urlChunks[1];
 }
 
-print_r($url);
-
-die($urlStr);
-
-$controllerFile = CONTROLLERS . $page . '.php';
+$controllerFile = CONTROLLERS .  $url['controller'] . '.php';
 
 if (file_exists($controllerFile))
 {

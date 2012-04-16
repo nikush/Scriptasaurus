@@ -1,4 +1,10 @@
 <?php
+if ($url['action'] == 'logout')
+{
+    session_destroy();
+    //header('Location: /');
+}
+
 if (!empty($_POST))
 {
     $_SESSION['username'] = $_POST['username'];
