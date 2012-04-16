@@ -15,4 +15,14 @@ function getFooter()
 {
     include PAGES . 'footer.php';
 }
+
+function isLoggedIn()
+{
+    return isset($_SESSION['username']);
+}
+
+function getUser()
+{
+    return isset($_SESSION['username']) ? $_SESSION['username'] : null;
+}
 ?>
