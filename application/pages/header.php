@@ -11,8 +11,8 @@ if (!isset($breadcrumbs))
     <head>
         <meta charset="utf-8" />
         <title>Scriptasaurus</title>
-        <link rel="stylesheet" href="<?php echo SITE_ROOT; ?>site/css/bootstrap.css" />
-        <link rel="stylesheet" href="<?php echo SITE_ROOT; ?>site/css/style.css" />
+        <link rel="stylesheet" href="<?php echo URLADDR; ?>site/css/bootstrap.css" />
+        <link rel="stylesheet" href="<?php echo URLADDR; ?>site/css/style.css" />
     </head>
     <body>
         <header>
@@ -23,7 +23,7 @@ if (!isset($breadcrumbs))
                 <ul class="pull-left breadcrumbs">
 <?php foreach ($breadcrumbs as $k => $v) : ?>
 <?php   if ($v !== null) : ?>
-    <?php $v = SITE_ROOT . $v; ?>
+    <?php $v = URLADDR . $v; ?>
                     <li><a href="<?php echo $v; ?>"><?php echo $k; ?></a></li>
 <?php   else : ?>
                     <li><?php echo $k; ?></li>
@@ -32,10 +32,10 @@ if (!isset($breadcrumbs))
                 </ul>
                 <ul>
 <?php if (isLoggedIn()) : ?>
-                    <li><a href="<?php echo SITE_ROOT; ?>account"><?php echo getUser(); ?></a></li>
-                    <li><a href="<?php echo SITE_ROOT; ?>login/logout">Log Out</a></li>
+                    <li><a href="<?php echo URLADDR; ?>account"><?php echo getUser(); ?></a></li>
+                    <li><a href="<?php echo URLADDR; ?>login/logout">Log Out</a></li>
 <?php else : ?>
-                    <li><a href="<?php echo SITE_ROOT; ?>login">Log In</a></li>
+                    <li><a href="<?php echo URLADDR; ?>login">Log In</a></li>
 <?php endif; ?>
                 </ul>
             </nav>

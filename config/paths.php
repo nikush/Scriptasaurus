@@ -3,8 +3,6 @@ define('DS', DIRECTORY_SEPARATOR);
 
 define('ROOT', dirname(dirname(__FILE__)) . DS);
 
-define('SITE_ROOT', 'http://' . $_SERVER['SERVER_NAME'] . preg_replace('/(scriptasaurus\/).*$/', '\1', $_SERVER['REQUEST_URI']));
-
 define('ABSPATH', dirname(__FILE__) . '/');
 $tempPath1 = explode('/', dirname($_SERVER['SCRIPT_FILENAME']));
 $tempPath2 = explode('/', substr(ABSPATH, 0, -1));
