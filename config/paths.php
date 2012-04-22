@@ -10,21 +10,6 @@ $tempPath1 = explode('/', dirname($_SERVER['SCRIPT_FILENAME']));
 $tempPath2 = explode('/', substr(ABSPATH, 0, -1));
 $tempPath3 = explode('/', dirname($_SERVER['PHP_SELF']));
 
-echo '1: ' . dirname($_SERVER['SCRIPT_FILENAME']);
-echo '<pre>';
-print_r($tempPath1);
-echo '</pre>';
-
-echo '2: ' . __FILE__;
-echo '<pre>';
-print_r($tempPath2);
-echo '</pre>';
-
-echo '3: ' . dirname($_SERVER['PHP_SELF']);
-echo '<pre>';
-print_r($tempPath3);
-echo '</pre>';
-
 // loop over the difference between temp urls
 for ($i = count($tempPath1); $i < count($tempPath2); $i++)
 {
@@ -32,20 +17,19 @@ for ($i = count($tempPath1); $i < count($tempPath2); $i++)
     array_pop($tempPath3);
 }
 
+// domain name plus trailing path
 $urladdr = $_SERVER['HTTP_HOST'] . implode('/', $tempPath3);
-echo $urladdr;
+
+// chuck application folder back in, when on localhost
+if ($_SERVER['HTTP_HOST'] == 'localhost')
+    $urladdr .= '/scriptasaurus';
 
 if ($urladdr{strlen($urladdr) - 1}== '/')
     define('URLADDR', 'http://' . $urladdr);
 else
     define('URLADDR', 'http://' . $urladdr . '/');
 
-echo '<br>';
-echo URLADDR;
-
 unset($tempPath1, $tempPath2, $tempPath3, $urladdr);
-
-exit();
 
 define('APP', ROOT . 'application' . DS);
 define('CONTROLLERS', APP . 'controllers' . DS);
