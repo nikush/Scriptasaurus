@@ -3,7 +3,11 @@ $map = array(
     'Home' => '',
     'Course' => 'course',
     array(
-        'Test Subpage' => 'subpage'
+        'Course' => 'course',
+        'Test Subpage' => 'subpage',
+        array(
+            'Sub-sub-page' => 'subsubpage'
+        )
     )
 );
 
