@@ -15,7 +15,6 @@ function listMap($map)
 {
     foreach ($map as $pageName => $pageAddr)
     {
-        echo '<li>';
         if (is_array($pageAddr))
         {
             echo '<ul>';
@@ -23,9 +22,8 @@ function listMap($map)
             echo '</ul>';
         }else
         {
-            echo "<a href='".URLADDR."$pageAddr'>$pageName</a>";
+            echo "<li><a href='".URLADDR."$pageAddr'>$pageName</a></li>";
         }
-        echo '</li>';
     }
 }
 ?>
