@@ -27,7 +27,7 @@ function listMap($map)
 ?>
 <div class="block">
 <h1>Site Map</h1>
-<ul>
+<u class="sitemap">
 <?php listMap($map); ?>
 </ul>
 </div>

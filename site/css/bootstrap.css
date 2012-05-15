@@ -277,3 +277,12 @@ nav ul
 {
     margin-bottom: 0;
 }
+
+.sitemap
+{
+    color: #CCB3E6;
+}
+.sitemap ul
+{
+    padding-left: 20px;
+}
