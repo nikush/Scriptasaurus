@@ -206,6 +206,25 @@ form select
     margin: 0 0 20px 0;
 }
 
+table
+{
+    width: 100%;
+    border: 1px solid #CCB8E0;
+}
+thead
+{
+    background-color: #F2ECF9;
+    border: 1px solid #CCB8E0;
+}
+tr
+{
+    border: 1px solid #CCB8E0;
+}
+td
+{
+    padding: 15px 10px;
+}
+
 span.purple
 {
     color: #7F40BF;

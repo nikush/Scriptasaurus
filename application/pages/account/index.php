@@ -19,7 +19,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="#">Lesson 1</a></td>
+                    <td><a href="lesson">Lesson 1</a></td>
                     <td>Description</td>
                     <td>Feedback</td>
                     <td>Discussion</td>
