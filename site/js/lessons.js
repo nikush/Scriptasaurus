@@ -80,7 +80,8 @@ var Lesson = {
             {
                 text: '<p>testing phase</p>',
                 clear: 1,
-                print: 'test print'
+                print: '<p>Scriptasaurus has a cold! He was sneezing and coughing all morning, and even though he picked all of the oranges from his orange tree and made a gallon of juice it didn’t make him feel any better.</p>' + 
+                    '<p>When you see him you must tell him to “go to the doctor”.</p>'
             }
         ],
 
