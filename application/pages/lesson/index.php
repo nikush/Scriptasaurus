@@ -5,7 +5,7 @@
             <h3>Commands</h3>
             <ul>
                 <li><code>next</code> : step forward in lesson</li>
-                <li><code>previous</code> : step back in lesson</li>
+                <li><code>back</code> : step back in lesson</li>
                 <li><code>clear</code> : clear the console</li>
             </ul>
             <p>To begin, type <code>'next'</code> then hit enter.</p>
@@ -36,7 +36,7 @@ var commandLine = $('#command-line'),
     textPanel = $('#lesson-text .updateable'),
     appCommands = {
         next: cmdNext,
-        previous: cmdPrevious,
+        back: cmdBack,
         clear: cmdClear,
         help: cmdHelp
     };
@@ -83,7 +83,7 @@ function cmdNext()
 {
     Lesson.stepForward();
 }
-function cmdPrevious()
+function cmdBack()
 {
     Lesson.stepBack();
 }
