@@ -25,6 +25,7 @@
 #console ul
 {
     margin-bottom: 0;
+    margin-left: 0;
     height: 400px;
     overflow-y: scroll;
 }
@@ -38,12 +39,6 @@
 {
     float: left;
     width: 500px;
-}
-
-#lesson-panel ul
-{
-    padding-left: 20px;
-    list-style-type: disc;
 }
 
 .lesson-fluid
