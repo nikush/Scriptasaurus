@@ -41,6 +41,10 @@ var Lesson = {
         {
             cmdClear();
         }
+        if ('print' in stuffToUpdate)
+        {
+            print(stuffToUpdate.print);
+        }
     },
 
     updateText: function(text)
@@ -75,7 +79,8 @@ var Lesson = {
             // step 3
             {
                 text: '<p>testing phase</p>',
-                clear: 1
+                clear: 1,
+                print: 'test print'
             }
         ],
 
