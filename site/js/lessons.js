@@ -66,10 +66,10 @@ var Lesson = {
         var step = this.getCurrentStep();
         if (input === step.requireInput)
         {
-            print(step.requireSuccessText);
+            print(step.requireSuccessText, true, 'success');
         } else
         {
-            print(step.requireFailText);
+            print(step.requireFailText, true, 'fail');
         }
     },
 
