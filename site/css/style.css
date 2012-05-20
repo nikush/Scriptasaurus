@@ -34,6 +34,14 @@
     color: #999;
     padding-left: 10px;
 }
+#console li.output.success
+{
+    color: green;
+}
+#console li.output.fail
+{
+    color: red;
+}
 
 #lesson-panel
 {

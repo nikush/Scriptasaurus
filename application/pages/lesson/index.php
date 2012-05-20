@@ -68,17 +68,18 @@ function execute(e)
             }
         } catch(e)
         {
-            print(e.message, true);
+            print(e.message, true, 'fail');
         }
     }
 }
 
-function print(text, outputClass)
+function print(text, outputClass, additionalClasses)
 {
     outputClass = outputClass ? outputClass : false;
 
     var li = $('<li>' + text + '</li>');
     if (outputClass) $(li).addClass('output');
+    if (additionalClasses) $(li).addClass(additionalClasses);
     $(outputList).append(li);
 
     $(outputList).scrollTop(99999);
