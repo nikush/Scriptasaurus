@@ -23,7 +23,7 @@
 <div class="block lesson-fluid">
     <div id="console">
         <ul>
-            <li>Welcome to the Scriptasaurus coding console!</li>
+            <li class="purple">Welcome to the Scriptasaurus coding console!</li>
         </ul>
         <input type="text" id="command-line" autofocus />
     </div>
