@@ -24,7 +24,6 @@
     <div id="console">
         <ul>
             <li>Welcome to the Scriptasaurus coding console!</li>
-            <li class="output">This is some example output</li>
         </ul>
         <input type="text" id="command-line" autofocus />
     </div>
