@@ -1,6 +1,6 @@
         </div> <!-- .content-container -->
         <footer>
-            <ul>
+            <ul class="unstyled">
                 <li><a href="course">Course</a></li>
                 <li><a href="sitemap">Sitemap</a></li>
             </ul>
