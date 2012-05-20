@@ -22,7 +22,13 @@
 <script src="<?php echo URLADDR; ?>site/js/jquery-1.7.2.min.js"></script>
 <script>
 var commandLine = $('#command-line'),
-    outputList = $('#console ul');
+    outputList = $('#console ul'),
+    appCommands = {
+        next: cmdNext,
+        previous: cmdPrevious,
+        clear: cmdClear,
+        help: cmdHelp
+    };
 
 $(commandLine).keydown(execute);
 
@@ -36,6 +42,12 @@ function execute(e)
 
         try
         {
+            if (command in appCommands)
+            {
+                var func = appCommands[command];
+                func();
+                return;
+            }
             var result = eval(command);
             if (result !== undefined) print(result, true);
         } catch(e)
@@ -52,5 +64,22 @@ function print(text, outputClass)
     var li = $('<li>' + text + '</li>');
     if (outputClass) $(li).addClass('output');
     $(outputList).append(li);
+}
+
+function cmdNext()
+{
+    print('next step', true);
+}
+function cmdPrevious()
+{
+    print('previous step', true);
+}
+function cmdClear()
+{
+    print('clear console', true);
+}
+function cmdHelp()
+{
+    print('show help', true);
 }
 </script>
