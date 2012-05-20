@@ -25,6 +25,8 @@
 #console ul
 {
     margin-bottom: 0;
+    height: 400px;
+    overflow-y: scroll;
 }
 #console li.output
 {

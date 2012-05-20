@@ -64,6 +64,8 @@ function print(text, outputClass)
     var li = $('<li>' + text + '</li>');
     if (outputClass) $(li).addClass('output');
     $(outputList).append(li);
+
+    $(outputList).scrollTop(99999);
 }
 
 function cmdNext()
