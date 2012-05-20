@@ -32,7 +32,7 @@ var Lesson = {
 
     update: function()
     {
-        var stuffToUpdate = this.data[this.currentLesson][this.currentStep];
+        var stuffToUpdate = this.getCurrentStep();
         if ('text' in stuffToUpdate)
         {
             this.updateText(stuffToUpdate.text);
@@ -50,6 +50,32 @@ var Lesson = {
     updateText: function(text)
     {
         $(textPanel).html(text);
+    },
+
+    requiredInput: function()
+    {
+        if ('requireInput' in this.getCurrentStep())
+        {
+            return true;
+        }
+        return false;
+    },
+
+    validateInput: function(input)
+    {
+        var step = this.getCurrentStep();
+        if (input === step.requireInput)
+        {
+            print(step.requireSuccessText);
+        } else
+        {
+            print(step.requireFailText);
+        }
+    },
+
+    getCurrentStep: function()
+    {
+        return this.data[this.currentLesson][this.currentStep];
     },
 
     data: [
@@ -81,7 +107,10 @@ var Lesson = {
                 text: '<p>testing phase</p>',
                 clear: 1,
                 print: '<p>Scriptasaurus has a cold! He was sneezing and coughing all morning, and even though he picked all of the oranges from his orange tree and made a gallon of juice it didn’t make him feel any better.</p>' + 
-                    '<p>When you see him you must tell him to “go to the doctor”.</p>'
+                    '<p>When you see him you must tell him to “go to the doctor”.</p>',
+                requireInput: 'alert("go to the doctor");',
+                requireSuccessText: 'Scriptasaurus thanks you for your advice and goes to see the doctor',
+                requireFailText: 'Scriptasaurus didn’t understand you - let’s try again'
             }
         ],
 

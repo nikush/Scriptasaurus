@@ -61,6 +61,11 @@ function execute(e)
             }
             var result = eval(command);
             if (result !== undefined) print(result, true);
+
+            if (Lesson.requiredInput())
+            {
+                Lesson.validateInput(command);
+            }
         } catch(e)
         {
             print(e.message, true);
