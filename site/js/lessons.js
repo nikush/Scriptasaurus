@@ -50,25 +50,27 @@ var Lesson = {
             // step 1
             {
                 text: '<p>You can create pop up windows in JavaScript to provide important information for the user. For example, if the user is using an old browser that does not support JavaScript, you can alert them in a pop up window to inform that that the current page requires JavaScript. The user can then answer ‘OK’ in that pop up window to confirm that they have read your alert.</p>' + 
-                '<p>To alert a user just follow the instructions below:</>' +
-                '<ol>' + 
-                    '<li>Write the alert keyword</li>' +
-                    '<li>Open round brackets - this is what contains the information you want the user to see</li>' +
-                    '<li>Write your alert message within quotation marks - this is the message your user will see</li>' +
-                    '<li>Close the round brackets</li>' +
-                    '<li>End with a semicolon</li>' +
-                '</ol>' + 
-                '<p>alert(“hello world!”);</p>'
+                    '<p>Type <code>next</code> to continue.</p>'
             },
 
             // step 2
             {
-                text: '<p>some more text</p>'
+                text: '<p>To alert a user just follow the instructions below:</>' +
+                    '<ol>' + 
+                        '<li>Write the alert keyword</li>' +
+                        '<li>Open round brackets - this is what contains the information you want the user to see</li>' +
+                        '<li>Write your alert message within quotation marks - this is the message your user will see</li>' +
+                        '<li>Close the round brackets</li>' +
+                        '<li>End with a semicolon</li>' +
+                    '</ol>' + 
+                    '<p><code>alert(“hello world!”);</code></p>' + 
+                    '<p>Try for yourself in the console!</p>' +
+                    '<p>Type <code>next</code> to continue to the test.</p>'
             },
 
             // step 3
             {
-                text: '<p>even more text</p>'
+                text: '<p>testing phase</p>'
             }
         ],
 
