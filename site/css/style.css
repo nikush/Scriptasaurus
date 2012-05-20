@@ -40,6 +40,12 @@
     width: 500px;
 }
 
+#lesson-panel ul
+{
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
 .lesson-fluid
 {
     margin-left: 520px;
