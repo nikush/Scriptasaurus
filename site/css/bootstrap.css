@@ -131,6 +131,12 @@ ol
 {
     list-style-type: decimal;
 }
+ul.unstyled,
+ol.unstyled
+{
+    list-style-type: none;
+    margin-left: 0;
+}
 
 header:after
 {
@@ -166,6 +172,10 @@ nav li:first-child
     margin-left: 0;
 }
 
+ul.breadcrumbs
+{
+    margin-left: 0;
+}    
 ul.breadcrumbs li:before
 {
     content: '>';
@@ -315,7 +325,6 @@ nav ul
 .sitemap
 {
     color: #CCB3E6;
-    padding-left: 20px;
 }
 .sitemap ul
 {
