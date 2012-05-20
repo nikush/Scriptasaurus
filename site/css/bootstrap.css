@@ -225,6 +225,11 @@ td
     padding: 15px 10px;
 }
 
+code
+{
+    font-family: monaco;
+}
+
 span.purple
 {
     color: #7F40BF;

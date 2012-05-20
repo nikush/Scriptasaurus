@@ -5,12 +5,28 @@ var Lesson = {
     stepForward: function()
     {
         this.currentStep++;
+
+        if (this.currentStep == this.data[this.currentLesson].length)
+        {
+            this.currentStep--;
+            print('reached final step, cannot proceed any further', true);
+            return;
+        }
+
         this.update();
     },
 
     stepBack: function()
     {
         this.currentStep--;
+
+        if (this.currentStep == -1)
+        {
+            this.currentStep++;
+            print('reached first step, cannot proceed any further', true)
+            return;
+        }
+
         this.update();
     },
 
@@ -38,15 +54,17 @@ var Lesson = {
 
             // step 2
             {
+                text: '<p>some more text</p>'
             },
 
             // step 3
             {
+                text: '<p>even more text</p>'
             }
         ],
 
         // lesson 2
-        [
-        ]
+        //[
+        //]
     ]
 };
