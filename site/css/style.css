@@ -31,3 +31,14 @@
     color: #999;
     padding-left: 10px;
 }
+
+#lesson-panel
+{
+    float: left;
+    width: 500px;
+}
+
+.lesson-fluid
+{
+    margin-left: 520px;
+}

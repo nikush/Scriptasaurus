@@ -1,6 +1,16 @@
-<div class="block">
-    <h1>Lesson 1</h1>
-    <h2>Console</h2>
+<div id="lesson-panel">
+    <div class="block">
+        <h2>Text</h2>
+        <p>Each of these panels can be rearranged and minimised.</p>
+    </div>
+    <div class="block">
+        <h2>Video</h2>
+    </div>
+    <div class="block">
+        <h2>Audio</h2>
+    </div>
+</div>
+<div class="block lesson-fluid">
     <div id="console">
         <ul>
             <li>Welcome to the Scriptasaurus coding console!</li>
