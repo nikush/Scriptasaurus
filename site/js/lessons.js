@@ -37,6 +37,10 @@ var Lesson = {
         {
             this.updateText(stuffToUpdate.text);
         }
+        if ('clear' in stuffToUpdate)
+        {
+            cmdClear();
+        }
     },
 
     updateText: function(text)
@@ -70,7 +74,8 @@ var Lesson = {
 
             // step 3
             {
-                text: '<p>testing phase</p>'
+                text: '<p>testing phase</p>',
+                clear: 1
             }
         ],
 
