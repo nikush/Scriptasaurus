@@ -30,5 +30,7 @@
 
         <label>News Feed Notifications</label>
         <p><input type="checkbox" />Receive email notifications?</p>
+
+        <input type="submit" value="Enrol!" />
     </form>
 </div>
