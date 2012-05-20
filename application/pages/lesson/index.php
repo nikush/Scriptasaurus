@@ -78,7 +78,7 @@ function cmdPrevious()
 }
 function cmdClear()
 {
-    print('clear console', true);
+    $(outputList).empty();
 }
 function cmdHelp()
 {
