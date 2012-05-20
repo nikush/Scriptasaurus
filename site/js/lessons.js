@@ -57,7 +57,7 @@ var Lesson = {
         [
             // step 1
             {
-                text: '<p>You can create pop up windows in JavaScript to provide important information for the user. For example, if the user is using an old browser that does not support JavaScript, you can alert them in a pop up window to inform that that the current page requires JavaScript. The user can then answer ‘OK’ in that pop up window to confirm that they have read your alert.</p>' + 
+                text: '<p>You can create pop up windows in JavaScript to provide important information for the user. For example, if a user has joined a discussion forum and another member of that forum has sent them a message, you could alert the user to inform them that they have a new message. The user can then answer ‘OK’ to confirm that they have read your alert.</p>' + 
                     '<p>Type <code>next</code> to continue.</p>'
             },
 
