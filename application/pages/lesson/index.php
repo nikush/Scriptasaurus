@@ -1,12 +1,14 @@
 <div id="lesson-panel">
-    <div class="block">
+    <div class="block" id="lesson-text">
         <h2>Text</h2>
-        <p>Each of these panels can be rearranged and minimised.</p>
+        <div class="updateable">
+            <p>Each of these panels can be rearranged and collapsed.</p>
+        </div>
     </div>
-    <div class="block">
+    <div class="block" id="lesson-video">
         <h2>Video</h2>
     </div>
-    <div class="block">
+    <div class="block" id="lesson-audio">
         <h2>Audio</h2>
     </div>
 </div>
@@ -20,9 +22,11 @@
     </div>
 </div>
 <script src="<?php echo URLADDR; ?>site/js/jquery-1.7.2.min.js"></script>
+<script src="<?php echo URLADDR; ?>site/js/lessons.js"></script>
 <script>
 var commandLine = $('#command-line'),
     outputList = $('#console ul'),
+    textPanel = $('#lesson-text .updateable'),
     appCommands = {
         next: cmdNext,
         previous: cmdPrevious,
@@ -70,11 +74,11 @@ function print(text, outputClass)
 
 function cmdNext()
 {
-    print('next step', true);
+    Lesson.stepForward();
 }
 function cmdPrevious()
 {
-    print('previous step', true);
+    Lesson.stepBack();
 }
 function cmdClear()
 {
