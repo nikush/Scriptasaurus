@@ -75,7 +75,9 @@ var Lesson = {
 
     getCurrentStep: function()
     {
-        return this.data[this.currentLesson][this.currentStep];
+        var step = this.data[this.currentLesson][this.currentStep];
+        if (step !== undefined) return step;
+        return {};
     },
 
     data: [
