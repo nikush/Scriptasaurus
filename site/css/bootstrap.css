@@ -257,9 +257,25 @@ code
     font-family: monaco;
 }
 
-span.purple
+.purple
 {
     color: #7F40BF;
+}
+.red
+{
+    color: #f00;
+}
+.blue
+{
+    color: #00f;
+}
+.orange
+{
+    color: #FF8F00;
+}
+.green
+{
+    color: #14B814;
 }
 
 .pull-left

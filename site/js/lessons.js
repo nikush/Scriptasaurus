@@ -93,13 +93,13 @@ var Lesson = {
             {
                 text: '<p>To alert a user just follow the instructions below:</>' +
                     '<ol>' + 
-                        '<li>Write the alert keyword</li>' +
-                        '<li>Open round brackets - this is what contains the information you want the user to see</li>' +
-                        '<li>Write your alert message within quotation marks - this is the message your user will see</li>' +
-                        '<li>Close the round brackets</li>' +
-                        '<li>End with a semicolon</li>' +
+                        '<li class="red">Write the alert keyword</li>' +
+                        '<li class="blue">Open round brackets - this is what contains the information you want the user to see</li>' +
+                        '<li class="green">Write your alert message within quotation marks - this is the message your user will see</li>' +
+                        '<li class="blue">Close the round brackets</li>' +
+                        '<li class="purple">End with a semicolon</li>' +
                     '</ol>' + 
-                    '<p><code>alert(“hello world!”);</code></p>' + 
+                    '<p><code><span class="red">alert</span><span class="blue">(</span><span class="green">"hello world!"</span><span class="blue">)</span>;</code></p>' + 
                     '<p>Try for yourself in the console!</p>' +
                     '<p>Type <code>next</code> to continue to the test.</p>'
             },
