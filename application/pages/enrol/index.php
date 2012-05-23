@@ -2,7 +2,7 @@
     <h1>Enrol</h1>
     <p>Fill out and submit the form below to enrol on the Scriptasaurus Javascript course.</p>
 
-    <form method="post">
+    <form action="questionnaire" method="post">
         <label>First Name</label>
         <input type="text" />
 
