@@ -128,5 +128,6 @@ If you agree with a statement click the agree button. You can agree to as many s
                 <label>I like to take part in activities in class.</label>
             </li>
         </ol>
+        <input type="submit" value="Submit" />
     </form>
 </div>
