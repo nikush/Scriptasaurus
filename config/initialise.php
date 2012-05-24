@@ -25,4 +25,9 @@ function getUser()
 {
     return isset($_SESSION['username']) ? $_SESSION['username'] : null;
 }
+
+function getLearnerStyle()
+{
+    return isset($_SESSION['learner_style']) ? $_SESSION['learner_style'] : 'visual';
+}
 ?>

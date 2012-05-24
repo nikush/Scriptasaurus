@@ -4,7 +4,7 @@
 
     <form action="questionnaire" method="post">
         <label>First Name</label>
-        <input type="text" />
+        <input type="text" name="username" />
 
         <label>Surname</label>
         <input type="text" />

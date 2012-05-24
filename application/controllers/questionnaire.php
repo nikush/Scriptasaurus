@@ -10,7 +10,8 @@ $breadcrumbs = array(
 <?php include PAGES . 'live-feed.php'; ?>
 </section>
 <div class="main fluid">
-<?php if (empty($_POST)) : ?>
+<?php if (array_key_exists('username', $_POST)) : ?>
+<?php $_SESSION['username'] = ($_POST['username'] != '') ? $_POST['username'] : 'User123'; ?>
 <?php include PAGES . 'questionnaire/index.php'; ?>
 <?php else: ?>
 <?php
@@ -31,6 +32,7 @@ if ($kinesthetic > $highestScore)
     $highestScore = $kinesthetic;
     $learnerStyle = 'kinestetic';
 }
+$_SESSION['learner_style'] = $learnerStyle;
 ?>
 <div class="block">
 <h1>Result: <span class="purple"><?php echo $learnerStyle; ?></span> learner</h1>

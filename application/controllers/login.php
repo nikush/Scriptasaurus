@@ -8,6 +8,7 @@ if ($url['action'] == 'logout')
 if (!empty($_POST))
 {
     $_SESSION['username'] = $_POST['username'];
+    $_SESSION['learner_style'] = 'visual';
     header('Location: ' . URLADDR);
 }
 
