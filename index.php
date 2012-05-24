@@ -1,7 +1,6 @@
 <?php
 require 'config/initialise.php';
 
-//$page = (isset($_GET['page'])) ? $_GET['page'] : 'home';
 $urlStr = (isset($_GET['url'])) ? trim($_GET['url'], '/') : 'home';
 
 $urlChunks = explode('/', $urlStr);
