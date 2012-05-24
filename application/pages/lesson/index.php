@@ -1,21 +1,26 @@
 <div id="lesson-panel">
+<?php $panelCollapsed = false; ?>
 <?php switch ($learnerStyle)
 {
     case 'audio' :
-        include PAGES . 'lesson/panel-text.php';
         include PAGES . 'lesson/panel-audio.php';
+        include PAGES . 'lesson/panel-text.php';
+        $panelCollapsed = true;
         include PAGES . 'lesson/panel-video.php';
     break;
 
     case 'kinesthetic' :
         include PAGES . 'lesson/panel-text.php';
+        $panelCollapsed = true;
         include PAGES . 'lesson/panel-audio.php';
         include PAGES . 'lesson/panel-video.php';
     break;
 
+    default:
     case 'visual' :
         include PAGES . 'lesson/panel-video.php';
         include PAGES . 'lesson/panel-text.php';
+        $panelCollapsed = true;
         include PAGES . 'lesson/panel-audio.php';
     break;
 }
@@ -41,6 +46,20 @@ var commandLine = $('#command-line'),
         clear: cmdClear,
         help: cmdHelp
     };
+
+$('.panel-control').click(function() {
+    var control = this,
+        content = $(this).parent().next(),
+        contentHidden = $(content).hasClass('hidden');
+
+    $(content).toggleClass('hidden');
+
+    if (contentHidden) {
+        $(control).html('-');
+    } else {
+        $(control).html('+');
+    }
+});
 
 $(commandLine).keydown(execute);
 

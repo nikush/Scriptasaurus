@@ -30,7 +30,7 @@ if ($audio > $highestScore)
 if ($kinesthetic > $highestScore)
 {
     $highestScore = $kinesthetic;
-    $learnerStyle = 'kinestetic';
+    $learnerStyle = 'kinesthetic';
 }
 $_SESSION['learner_style'] = $learnerStyle;
 ?>

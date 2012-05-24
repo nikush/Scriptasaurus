@@ -1,5 +1,5 @@
     <div class="block" id="lesson-text">
-        <h2>Text</h2>
+        <h2>Text <span class="panel-control">-</span></h2>
         <div class="updateable">
             <h3>Commands</h3>
             <ul>

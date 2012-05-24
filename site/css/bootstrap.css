@@ -326,6 +326,8 @@ code
     margin-bottom: 20px;
 }
 
+.hidden { display: none; }
+
 .clearfix:after
 {
     content: '';
