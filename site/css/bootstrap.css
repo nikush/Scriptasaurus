@@ -249,6 +249,12 @@ tr
 td
 {
     padding: 15px 10px;
+    vertical-align: middle;
+}
+tr.disabled
+{
+    color: #b4b4b4;
+    background-color: #ececec;
 }
 
 code
