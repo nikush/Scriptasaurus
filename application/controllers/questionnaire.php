@@ -16,16 +16,16 @@ $breadcrumbs = array(
 <?php else: ?>
 <?php
 $visual = array_key_exists('visual', $_POST) ? count($_POST['visual']) : 0;
-$audio = array_key_exists('audio', $_POST) ? count($_POST['audio']) : 0;
+$auditory = array_key_exists('auditory', $_POST) ? count($_POST['auditory']) : 0;
 $kinesthetic = array_key_exists('kinesthetic', $_POST) ? count($_POST['kinesthetic']) : 0;
 
 $highestScore = $visual;
 $learnerStyle = 'visual';
 
-if ($audio > $highestScore)
+if ($auditory > $highestScore)
 {
-    $highestScore = $audio;
-    $learnerStyle = 'audio';
+    $highestScore = $auditory;
+    $learnerStyle = 'auditory';
 }
 if ($kinesthetic > $highestScore)
 {

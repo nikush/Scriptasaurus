@@ -2,8 +2,8 @@
 <?php $panelCollapsed = false; ?>
 <?php switch ($learnerStyle)
 {
-    case 'audio' :
-        include PAGES . 'lesson/panel-audio.php';
+    case 'auditory' :
+        include PAGES . 'lesson/panel-auditory.php';
         include PAGES . 'lesson/panel-text.php';
         $panelCollapsed = true;
         include PAGES . 'lesson/panel-video.php';
@@ -12,7 +12,7 @@
     case 'kinesthetic' :
         include PAGES . 'lesson/panel-text.php';
         $panelCollapsed = true;
-        include PAGES . 'lesson/panel-audio.php';
+        include PAGES . 'lesson/panel-auditory.php';
         include PAGES . 'lesson/panel-video.php';
     break;
 
@@ -21,7 +21,7 @@
         include PAGES . 'lesson/panel-video.php';
         include PAGES . 'lesson/panel-text.php';
         $panelCollapsed = true;
-        include PAGES . 'lesson/panel-audio.php';
+        include PAGES . 'lesson/panel-auditory.php';
     break;
 }
 ?>
