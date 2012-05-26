@@ -36,6 +36,19 @@
 </div>
 <script src="<?php echo URLADDR; ?>site/js/jquery-1.7.2.min.js"></script>
 <script src="<?php echo URLADDR; ?>site/js/lessons.js"></script>
+<!-- jPlayer -->
+<link href="<?php echo URLADDR; ?>site/js/jPlayer/blue.monday/jplayer.blue.monday.css" rel="stylesheet">
+<script src="<?php echo URLADDR; ?>site/js/jPlayer/jquery.jplayer.js"></script>
+<script>
+$('#jquery_jplayer_1').jPlayer({
+    ready: function(){
+        $(this).jPlayer("setMedia", {
+            m4a: "<?php echo URLADDR; ?>site/assets/Louder.m4a",
+        });
+    },
+    supplied: "m4a"
+});
+</script>
 <script>
 var commandLine = $('#command-line'),
     outputList = $('#console ul'),
