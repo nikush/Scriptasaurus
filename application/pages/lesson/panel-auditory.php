@@ -9,7 +9,6 @@
 <?php else : ?>
         <div class="updateable">
 <?php endif; ?>
-            <p>Each of these panels can be rearranged and collapsed.</p>
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
               <div id="jp_container_1" class="jp-audio">
                 <div class="jp-type-single">
@@ -41,7 +40,7 @@
                   </div>
                   <div class="jp-title">
                     <ul>
-                      <li>Bubble</li>
+                      <li>Lesson 1</li>
                     </ul>
                   </div>
                   <div class="jp-no-solution">

@@ -40,13 +40,25 @@
 <link href="<?php echo URLADDR; ?>site/js/jPlayer/blue.monday/jplayer.blue.monday.css" rel="stylesheet">
 <script src="<?php echo URLADDR; ?>site/js/jPlayer/jquery.jplayer.js"></script>
 <script>
+// auditory
 $('#jquery_jplayer_1').jPlayer({
     ready: function(){
         $(this).jPlayer("setMedia", {
             m4a: "<?php echo URLADDR; ?>site/assets/Louder.m4a",
         });
     },
-    supplied: "m4a"
+    supplied: "m4a",
+    cssSelectorAncestor: '#jp_container_1',
+});
+// video
+$("#jquery_jplayer_2").jPlayer({
+    ready: function () {
+        $(this).jPlayer("setMedia", {
+            m4v: "<?php echo URLADDR; ?>site/assets/intro.m4v",
+        });
+    },
+    supplied: "m4v",
+    cssSelectorAncestor: '#jp_container_2',
 });
 </script>
 <script>
