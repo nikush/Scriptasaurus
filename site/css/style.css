@@ -1,3 +1,10 @@
+header div.container
+{
+    background-image: url(../images/scriptasaurus.png);
+    background-repeat: no-repeat;
+    background-position: 35%;
+}
+
 #console,
 #command-line
 {
