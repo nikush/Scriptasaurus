@@ -45,11 +45,25 @@ var Lesson = {
         {
             print(stuffToUpdate.print);
         }
+        if ('audio' in stuffToUpdate)
+        {
+            this.updateAudio(stuffToUpdate.audio);
+        }
     },
 
     updateText: function(text)
     {
         $(textPanel).html(text);
+    },
+
+    updateAudio: function(audio)
+    {
+        var base_url = window.location.href.replace("lesson", ""),
+            file = base_url + "site/assets/lesson1/" + audio + ".mp3";
+        $("#jquery_jplayer_1").jPlayer("clearMedia");
+        $("#jquery_jplayer_1").jPlayer("setMedia", {
+            mp3: file
+        });
     },
 
     requiredInput: function()
@@ -90,7 +104,7 @@ var Lesson = {
                 '<p>JavaScript adds dynamic elements to a website. It is used, for example, to aid the user registration process by checking information the user has entered and sending or saving form data.</p>' + 
                 '<p>This course is divded into ten lessons which are designed to build on your knowledge and test you throughout and at the end of each lesson. Lesson ten of this course will test your knowledge of the entire course content.</p>' + 
                 '<p>In this first lesson we will be covering the basics of the JavaScript programming language, including alerts, confirms, prompts, strings, string concatenation and prompts with alerts.</p>' + 
-                    '<p>Type <code>next</code> to continue.</p>'
+                    '<p>Type <code>next</code> to continue.</p>',
             },
             // }}}
         ],
@@ -101,7 +115,9 @@ var Lesson = {
             // step 1 {{{
             {
                 text: '<p>You can create pop up windows in JavaScript to provide important information for the user. For example, if a user has joined a discussion forum and another member of that forum has sent them a message, you could alert the user to inform them that they have a new message. The user can then answer ‘OK’ to confirm that they have read your alert.</p>' + 
-                    '<p>Type <code>next</code> to continue.</p>'
+                    '<p>Type <code>next</code> to continue.</p>',
+                audio: 'alerts/instructions',
+                video: 'alerts/instructions'
             },
             // }}}
 
