@@ -81,15 +81,31 @@ var Lesson = {
     },
 
     data: [
-        // lesson 1
+        // introduction {{{
         [
-            // step 1
+            // step 1 {{{
+            {
+                text: '<p>JavaScript is an Object-Based Programming language. An object is simply a special kind of data that has its own properties and methods. We will explore these properties and methods more fully in lesson two of this course.</p>' + 
+                '<p>JavaScript is used with HTML and CSS to create dynamic websites. Check out our Scriptasaurus live feed and forum for information about our brand new HTML, CSS and JavaScript course, the follow on for this beginner JavaScript course. </p>' + 
+                '<p>JavaScript adds dynamic elements to a website. It is used, for example, to aid the user registration process by checking information the user has entered and sending or saving form data.</p>' + 
+                '<p>This course is divded into ten lessons which are designed to build on your knowledge and test you throughout and at the end of each lesson. Lesson ten of this course will test your knowledge of the entire course content.</p>' + 
+                '<p>In this first lesson we will be covering the basics of the JavaScript programming language, including alerts, confirms, prompts, strings, string concatenation and prompts with alerts.</p>' + 
+                    '<p>Type <code>next</code> to continue.</p>'
+            },
+            // }}}
+        ],
+        // }}}
+
+        // alerts {{{
+        [
+            // step 1 {{{
             {
                 text: '<p>You can create pop up windows in JavaScript to provide important information for the user. For example, if a user has joined a discussion forum and another member of that forum has sent them a message, you could alert the user to inform them that they have a new message. The user can then answer ‘OK’ to confirm that they have read your alert.</p>' + 
                     '<p>Type <code>next</code> to continue.</p>'
             },
+            // }}}
 
-            // step 2
+            // step 2 {{{
             {
                 text: '<p>To alert a user just follow the instructions below:</>' +
                     '<ol>' + 
@@ -103,8 +119,9 @@ var Lesson = {
                     '<p>Try for yourself in the console!</p>' +
                     '<p>Type <code>next</code> to continue to the test.</p>'
             },
+            // }}}
 
-            // step 3
+            // step 3 {{{
             {
                 text: '<p>testing phase</p>',
                 clear: 1,
@@ -114,10 +131,8 @@ var Lesson = {
                 requireSuccessText: 'Scriptasaurus thanks you for your advice and goes to see the doctor',
                 requireFailText: 'Scriptasaurus didn’t understand you - let’s try again'
             }
+            // }}}
         ],
-
-        // lesson 2
-        //[
-        //]
+        // }}}
     ]
 };
