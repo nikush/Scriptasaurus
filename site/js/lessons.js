@@ -158,7 +158,9 @@ var Lesson = {
         [
             // step 1 {{{
             {
-                text: '<p>You can create pop up windows in JavaScript to provide important information for the user. For example, if a user has joined a discussion forum and another member of that forum has sent them a message, you could alert the user to inform them that they have a new message. The user can then answer ‘OK’ to confirm that they have read your alert.</p>' + 
+                text: '<p>You can create alert boxes in JavaScript to provide important information for the user.</p>' +
+'<p>For example, if a user has joined a discussion forum and another member of that forum has sent them a message, you could alert the user to inform them that they have a new message.</p>' +
+'<p>The user can then answer ‘OK’ to confirm that they have read your alert.</p>' +
                     '<p>Type <code>next</code> to continue.</p>',
                 audio: 'alerts/instructions',
                 video: 'alerts/instructions'
@@ -177,19 +179,20 @@ var Lesson = {
                     '</ol>' + 
                     '<p><code><span class="red">alert</span><span class="blue">(</span><span class="green">"hello world!"</span><span class="blue">)</span>;</code></p>' + 
                     '<p>Try for yourself in the console!</p>' +
-                    '<p>Type <code>next</code> to continue to the test.</p>'
+                    '<p>Type <code>next</code> to continue to the <span class="purple">test</span>.</p>'
             },
             // }}}
 
             // step 3 {{{
             {
-                text: '<p>testing phase</p>',
+                text: '<p>Scriptasaurus has just logged onto his favourite social networking site. He has some fan mail from you! You would like to be his friend.</p>' +
+                    '<p>You must alert him to this - say "I want to be your friend".</p>',
+                audio: 'alerts/testing',
+                video: 'alerts/testing',
                 clear: 1,
-                print: '<p>Scriptasaurus has a cold! He was sneezing and coughing all morning, and even though he picked all of the oranges from his orange tree and made a gallon of juice it didn’t make him feel any better.</p>' + 
-                    '<p>When you see him you must tell him to “go to the doctor”.</p>',
-                requireInput: 'alert("go to the doctor");',
-                requireSuccessText: 'Scriptasaurus thanks you for your advice and goes to see the doctor',
-                requireFailText: 'Scriptasaurus didn’t understand you - let’s try again'
+                requireInput: 'alert("I want to be your friend");',
+                requireSuccessText: 'Scriptasaurus accepts your friend request!',
+                requireFailText: 'Scriptasaurus didn\'t understand you - let\'s try again'
             }
             // }}}
         ],
