@@ -54,7 +54,7 @@ $('#jquery_jplayer_1').jPlayer({
 $("#jquery_jplayer_2").jPlayer({
     ready: function () {
         $(this).jPlayer("setMedia", {
-            m4v: "<?php echo URLADDR; ?>site/assets/intro/intro.m4v",
+            m4v: "<?php echo URLADDR; ?>site/assets/lesson1/intro/intro.m4v",
         });
     },
     supplied: "m4v",

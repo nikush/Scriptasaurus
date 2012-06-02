@@ -77,6 +77,10 @@ var Lesson = {
         {
             this.updateAudio(stuffToUpdate.audio);
         }
+        if ('video' in stuffToUpdate)
+        {
+            this.updateVideo(stuffToUpdate.video);
+        }
     },
 
     updateText: function(text)
@@ -91,6 +95,16 @@ var Lesson = {
         $("#jquery_jplayer_1").jPlayer("clearMedia");
         $("#jquery_jplayer_1").jPlayer("setMedia", {
             mp3: file
+        });
+    },
+
+    updateVideo: function(video)
+    {
+        var base_url = window.location.href.replace("lesson", ""),
+            file = base_url + "site/assets/lesson1/" + video + ".m4v";
+        $("#jquery_jplayer_2").jPlayer("clearMedia");
+        $("#jquery_jplayer_2").jPlayer("setMedia", {
+            m4v: file
         });
     },
 
@@ -133,6 +147,8 @@ var Lesson = {
                 '<p>This course is divded into ten lessons which are designed to build on your knowledge and test you throughout and at the end of each lesson. Lesson ten of this course will test your knowledge of the entire course content.</p>' + 
                 '<p>In this first lesson we will be covering the basics of the JavaScript programming language, including alerts, confirms, prompts, strings, string concatenation and prompts with alerts.</p>' + 
                     '<p>Type <code>next</code> to continue.</p>',
+                audio: 'intro/intro',
+                video: 'intro/intro'
             },
             // }}}
         ],
