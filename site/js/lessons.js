@@ -9,7 +9,8 @@ var Lesson = {
         if (this.currentStep == this.data[this.currentLesson].length)
         {
             this.currentStep--;
-            print('reached final step, cannot proceed any further', true);
+            this.lessonForward();
+            this.update();
             return;
         }
 
@@ -20,14 +21,41 @@ var Lesson = {
     {
         this.currentStep--;
 
-        if (this.currentStep == -1)
+        if (this.currentStep <= 0)
         {
             this.currentStep++;
-            print('reached first step, cannot proceed any further', true)
+            this.lessonBack();
+            this.update();
             return;
         }
 
         this.update();
+    },
+
+    lessonForward: function()
+    {
+        this.currentLesson++;
+        if (this.currentLesson == this.data.length)
+        {
+            this.currentLesson--;
+            print('reached end', true);
+        } else
+        {
+            this.currentStep = 0;
+        }
+    },
+
+    lessonBack: function()
+    {
+        this.currentLesson--;
+        if (this.currentLesson === -1)
+        {
+            this.currentLesson++;
+            print('reached beginning', true);
+        } else
+        {
+            this.currentStep = this.data[this.currentLesson].length - 1;
+        }
     },
 
     update: function()
