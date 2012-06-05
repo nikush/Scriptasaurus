@@ -104,7 +104,7 @@ After all a Scriptasaurus isn’t born - <span class="purple">he is compiled</sp
 $('#jquery_jplayer_2').jPlayer({
     ready: function(){
         $(this).jPlayer("setMedia", {
-            mp3: "<?php echo URLADDR; ?>site/assets/intro/IntroAudio.mp3",
+            mp3: "<?php echo URLADDR; ?>site/assets/intro/intro.mp3",
         });
     },
     supplied: "mp3",
@@ -113,7 +113,7 @@ $('#jquery_jplayer_2').jPlayer({
 $('#jquery_jplayer_1').jPlayer({
     ready: function(){
         $(this).jPlayer("setMedia", {
-            m4v: "<?php echo URLADDR; ?>site/assets/intro.m4v",
+            m4v: "<?php echo URLADDR; ?>site/assets/intro/intro.m4v",
         });
     },
     supplied: "m4v",
