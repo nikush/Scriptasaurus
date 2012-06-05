@@ -19,7 +19,9 @@ for ($i = count($tempPath1); $i < count($tempPath2); $i++)
 $urladdr = $_SERVER['HTTP_HOST'] . implode('/', $tempPath3);
 
 // chuck application folder back in, when on localhost
-if ($_SERVER['HTTP_HOST'] == 'localhost')
+if ($_SERVER['HTTP_HOST'] == 'localhost' || 
+    $_SERVER['HTTP_HOST'] == 'nikush.co.uk' ||
+    $_SERVER['HTTP_HOST'] == 'www.nikush.co.uk')
     $urladdr .= '/scriptasaurus';
 
 if ($urladdr{strlen($urladdr) - 1}== '/')
