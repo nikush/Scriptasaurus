@@ -44,17 +44,17 @@
 $('#jquery_jplayer_1').jPlayer({
     ready: function(){
         $(this).jPlayer("setMedia", {
-            m4a: "<?php echo URLADDR; ?>site/assets/Louder.m4a",
+            mp3: "<?php echo URLADDR; ?>site/assets/lesson1/intro/intro.mp3",
         });
     },
-    supplied: "m4a",
+    supplied: "mp3",
     cssSelectorAncestor: '#jp_container_1',
 });
 // video
 $("#jquery_jplayer_2").jPlayer({
     ready: function () {
         $(this).jPlayer("setMedia", {
-            m4v: "<?php echo URLADDR; ?>site/assets/intro.m4v",
+            m4v: "<?php echo URLADDR; ?>site/assets/lesson1/intro/intro.m4v",
         });
     },
     supplied: "m4v",
